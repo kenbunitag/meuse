@@ -15,7 +15,7 @@ def prBuild() {
 
     def meuseImage
 
-    jenkinsImage = buildImage(product: 'kenbun', name: 'meuse', commandlineOptions: ' -f Dockerfile')
+    meuseImage = buildImage(product: 'kenbun', name: 'meuse', commandlineOptions: ' -f Dockerfile')
     test(image: meuseImage)
 
     return meuseImage
