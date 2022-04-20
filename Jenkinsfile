@@ -2,7 +2,7 @@ node {
     checkout scm
 
     generalPipeline{
-        if (env.BRANCH_NAME == 'main') {
+        if (env.BRANCH_NAME == 'master') {
             prodBuild()
         } else {
             prBuild()
